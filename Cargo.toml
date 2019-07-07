@@ -1,0 +1,19 @@
+[package]
+name = "life"
+version = "0.1.0"
+authors = ["hukumka <hukumka212@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+packed_simd = "0.3"
+rand = "0.6.5"
+
+[dev-dependencies]
+criterion = "0.2.11"
+
+[[bench]]
+name = "life"
+harness = false
+
+[profile.release]
+debug = true
